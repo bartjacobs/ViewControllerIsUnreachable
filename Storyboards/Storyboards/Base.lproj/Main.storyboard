@@ -21,6 +21,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiS-U7-dKJ">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
                                         <state key="normal" title="Segue"/>
+                                        <connections>
+                                            <segue destination="mEG-9r-udE" kind="show" id="4X8-yB-zuR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0A-Vs-UMp">
                                         <rect key="frame" x="0.0" y="38" width="44" height="30"/>
@@ -47,9 +50,9 @@
         <!--My View Controller-->
         <scene sceneID="jrg-kc-aG1">
             <objects>
-                <viewController id="mEG-9r-udE" customClass="MyViewController" customModule="Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyViewController" id="mEG-9r-udE" customClass="MyViewController" customModule="Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ibo-15-0V7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ROU-BX-oJe"/>

@@ -21,6 +21,14 @@ class ViewController: UIViewController {
 
     // MARK: - Actions
     
-    @IBAction func showMyViewController(_ sender: Any) {}
+    @IBAction func showMyViewController(_ sender: Any) {
+        // Instantiate My View Controller
+        guard let myViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: "MyViewController") as? MyViewController else {
+            fatalError("Unable to Instantiate My View Controller")
+        }
+        
+        // Present My View Controller
+        present(myViewController, animated: true)
+    }
 
 }
